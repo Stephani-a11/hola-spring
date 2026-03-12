@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Proyecto Spring Boot</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: white;
+            text-align: center;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: 20px;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        .btn {
+            display: inline-block;
+            background: white;
+            color: #667eea;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+        .endpoint {
+            background: rgba(255,255,255,0.2);
+            padding: 10px;
+            border-radius: 10px;
+            margin: 10px 0;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>👋 ¡Hola Invitado!</h1>
+        <p>Este es mi proyecto en <strong>Spring Boot</strong> desplegado en Railway</p>
+        
+        <a href="https://github.com/Stephani-a11/hola-spring" 
+           target="_blank" class="btn">
+            📂 Ver código en GitHub
+        </a>
+        
+        <div class="endpoints">
+            <h3>📌 Endpoints disponibles:</h3>
+            <div class="endpoint">/api/ - Información</div>
+            <div class="endpoint">/api/hola - Saludo por defecto</div>
+            <div class="endpoint">/api/hola?nombre=TuNombre - Saludo personalizado</div>
+        </div>
+        
+        <p style="margin-top: 30px; font-size: 0.9em;">
+            🚀 Desplegado con Railway | Desarrollado con Spring Boot
+        </p>
+    </div>
+</body>
+</html>
